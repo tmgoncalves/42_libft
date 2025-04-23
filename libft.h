@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmarinho <tmarinho@student.42.sp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/11 14:42:21 by tmarinho          #+#    #+#             */
-/*   Updated: 2025/04/23 20:23:41 by tmarinho         ###   ########.fr       */
+/*   Created: 2025/04/23 19:16:44 by tmarinho          #+#    #+#             */
+/*   Updated: 2025/04/23 19:56:20 by tmarinho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifdef LIBFT_H
+# define LIBFT_H
 
-int	ft_isprint(int c)
-{
-	if (c > 31 && c < 127)
-		return (1);
-	else
-		return (0);
-}
+# include <stdio.h>
+
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
+size_t	ft_strlen(const char *s);
+
+#endif

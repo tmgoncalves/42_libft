@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmarinho <tmarinho@student.42.sp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/11 14:42:21 by tmarinho          #+#    #+#             */
-/*   Updated: 2025/04/23 20:23:41 by tmarinho         ###   ########.fr       */
+/*   Created: 2025/04/11 17:38:33 by tmarinho          #+#    #+#             */
+/*   Updated: 2025/04/23 20:27:50 by tmarinho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-int	ft_isprint(int c)
+#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int	main(void)
 {
-	if (c > 31 && c < 127)
-		return (1);
-	else
-		return (0);
+	char	s1[] = "eh o";
+	char	s2[] = "eh o coringao";
+
+	printf("strcmp: %d\n", strcmp(s1, s2));
 }
