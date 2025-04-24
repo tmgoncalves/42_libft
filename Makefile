@@ -6,7 +6,7 @@
 #    By: tmarinho <tmarinho@student.42.sp>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/11 13:00:33 by tmarinho          #+#    #+#              #
-#    Updated: 2025/04/23 20:41:57 by tmarinho         ###   ########.fr        #
+#    Updated: 2025/04/23 21:19:11 by tmarinho         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,12 +24,12 @@ REMOVE	= rm -f
 
 $(NAME)	:	$(OBJS)
 		ar rc $(NAME) $(OBJS)
-		ranlib ($NAME)
+		ranlib $(NAME)
 
 all:	$(NAME)
 
 .c.o:
-	$(COMPILE) $(CFLAGS) -c $< -o $(OBJS)
+	$(COMPILE) $(CFLAGS) -c $< -o $@
 
 clean:
 	$(REMOVE) $(OBJS)

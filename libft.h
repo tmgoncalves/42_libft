@@ -6,14 +6,15 @@
 /*   By: tmarinho <tmarinho@student.42.sp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 19:16:44 by tmarinho          #+#    #+#             */
-/*   Updated: 2025/04/23 19:56:20 by tmarinho         ###   ########.fr       */
+/*   Updated: 2025/04/23 21:17:54 by tmarinho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifdef LIBFT_H
+#ifndef LIBFT_H
 # define LIBFT_H
 
 # include <stdio.h>
+# include <stdlib.h>
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
