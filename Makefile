@@ -6,13 +6,13 @@
 #    By: tmarinho <tmarinho@student.42.sp>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/11 13:00:33 by tmarinho          #+#    #+#              #
-#    Updated: 2025/04/23 21:19:11 by tmarinho         ###   ########.fr        #
+#    Updated: 2025/04/23 21:31:59 by tmarinho         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= libft.a
 
-SRC	= ft_isalnum.c 
+SRC	= $(wildcard *.c) 
 
 OBJS	= $(SRC:.c=.o)
 
