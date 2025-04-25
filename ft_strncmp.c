@@ -6,20 +6,26 @@
 /*   By: tmarinho <tmarinho@student.42.sp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/11 17:38:33 by tmarinho          #+#    #+#             */
-/*   Updated: 2025/04/23 20:27:50 by tmarinho         ###   ########.fr       */
+/*   Updated: 2025/04/25 16:56:48 by tmarinho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
-int	main(void)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	char	s1[] = "eh o";
-	char	s2[] = "eh o coringao";
+	unsigned char	*u_s1;
+	unsigned char	*u_s2;
+	size_t			counter;
 
-	printf("strcmp: %d\n", strcmp(s1, s2));
+	u_s1 = (unsigned char *) s1;
+	u_s2 = (unsigned char *) s2;
+	counter = 0;
+	while (counter < n)
+	{
+		if (u_s1[counter] != u_s2[counter])
+			return (u_s1[counter] - u_s2[counter]);
+		counter++;
+	}
+	return (0);
 }
