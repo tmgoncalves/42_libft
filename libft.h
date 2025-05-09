@@ -6,7 +6,7 @@
 /*   By: tmarinho <tmarinho@student.42.sp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 19:16:44 by tmarinho          #+#    #+#             */
-/*   Updated: 2025/05/09 16:34:33 by tmarinho         ###   ########.fr       */
+/*   Updated: 2025/05/09 16:55:17 by tmarinho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,6 @@ void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
 char	*ft_strdup(const char *s1);
 int		ft_atoi(const char *str);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 
 #endif
