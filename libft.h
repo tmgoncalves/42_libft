@@ -6,7 +6,7 @@
 /*   By: tmarinho <tmarinho@student.42.sp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 19:16:44 by tmarinho          #+#    #+#             */
-/*   Updated: 2025/04/30 19:07:05 by tmarinho         ###   ########.fr       */
+/*   Updated: 2025/05/09 14:29:53 by tmarinho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
+char	*ft_strdup(const char *s1);
+int		ft_atoi(const char *str);
 
 #endif
